@@ -1,10 +1,9 @@
-import React, {FC} from "react";
+import React, {FC, useState} from "react";
 import "./scss/style.scss";
 
 const App: FC = () => {
-
     return (
-        <div className="app"/>
+        <div className="app" />
     );
 };
 

@@ -15,4 +15,3 @@ export const clearParams = (params, exclusion = []) =>
     if (value || exclusion.indexOf(item) !== -1) acc[item] = value;
     return acc;
 }, {});
-

@@ -1,15 +1,14 @@
-import js from '@eslint/js';
-import sonarjs from "eslint-plugin-sonarjs";
-import globals from 'globals';
-import tseslint from 'typescript-eslint';
-import eslintReact from 'eslint-plugin-react';
-import eslintReactHooks from 'eslint-plugin-react-hooks';
-import eslintReactRefresh from 'eslint-plugin-react-refresh';
-import eslintPluginUnicorn from 'eslint-plugin-unicorn';
-
+const js = require('@eslint/js');
+const sonarjs = require('eslint-plugin-sonarjs');
+const globals = require('globals');
+const tseslint = require('typescript-eslint');
+const eslintReact = require('eslint-plugin-react');
+const eslintReactHooks = require('eslint-plugin-react-hooks');
+const eslintReactRefresh = require('eslint-plugin-react-refresh');
+const eslintPluginUnicorn = require('eslint-plugin-unicorn');
 
 /** @type {import('eslint').Linter.FlatConfig[]} */
-export default tseslint.config(
+module.exports = tseslint.config(
     {
         plugins: {
             '@typescript-eslint': tseslint.plugin,
